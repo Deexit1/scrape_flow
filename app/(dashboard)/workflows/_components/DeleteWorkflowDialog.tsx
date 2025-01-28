@@ -21,7 +21,7 @@ interface Props {
 	open: boolean;
 	setOpen: (open: boolean) => void;
 	workflowname: string;
-	workflowId: number;
+	workflowId: string;
 }
 function DeleteWorkflowDialog({
 	open,

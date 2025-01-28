@@ -95,7 +95,7 @@ function WorkflowActions({
 	workflowId,
 }: {
 	workflowName: string;
-	workflowId: number;
+	workflowId: string;
 }) {
 	const [showDeleteDialog, setShowDeleteDialog] = useState(false);
 	return (

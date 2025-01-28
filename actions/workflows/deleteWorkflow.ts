@@ -6,7 +6,7 @@ import { auth } from "@clerk/nextjs/server";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
-export async function DeleteWorkflow(id: number) {
+export async function DeleteWorkflow(id: string) {
 	const { userId } = await auth();
 	if (!userId) {
 		throw new Error("Unauthenticated");
