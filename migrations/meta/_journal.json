@@ -15,6 +15,20 @@
       "when": 1734042299494,
       "tag": "0001_mighty_moonstone",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1734044508068,
+      "tag": "0002_aspiring_the_santerians",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1734045150511,
+      "tag": "0003_friendly_ben_urich",
+      "breakpoints": true
     }
   ]
 }

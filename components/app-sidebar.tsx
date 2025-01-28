@@ -1,5 +1,9 @@
 "use client";
+import { CoinsIcon, Home, Layers2Icon, ShieldCheckIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
 import React from "react";
+
+import Logo from "./Logo";
 import {
 	Sidebar,
 	SidebarContent,
@@ -12,9 +16,7 @@ import {
 	SidebarMenuItem,
 	useSidebar,
 } from "./ui/sidebar";
-import { CoinsIcon, Home, Layers2Icon, ShieldCheckIcon } from "lucide-react";
-import Logo from "./Logo";
-import { usePathname } from "next/navigation";
+
 const items = [
 	{
 		title: "Home",

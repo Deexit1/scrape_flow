@@ -1,8 +1,10 @@
-import db from "@/db";
-import { workflow } from "@/db/schema";
 import { auth } from "@clerk/nextjs/server";
 import { and, eq } from "drizzle-orm";
 import React from "react";
+
+import db from "@/db";
+import { workflow } from "@/db/schema";
+
 import Editor from "../../_components/Editor";
 
 async function page({ params }: { params: { workflowId: string } }) {

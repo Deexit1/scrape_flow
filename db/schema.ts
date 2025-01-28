@@ -17,6 +17,11 @@ export const workflow = pgTable("workflow", {
 	description: text("description"),
 	definition: text("definition").notNull(),
 	status: text("status").notNull(),
+
+	lastRunAt: timestamp("lastRunAt", { withTimezone: true }),
+	lastRunId: text("lastRunId"),
+	lastRunStatus: text("lastRunStatus"),
+
 	createdAt: timestamp("createdAt", { withTimezone: true }).defaultNow(),
 	updatedAt: timestamp("updatedAt", { withTimezone: true }),
 });
@@ -33,6 +38,7 @@ export const workflowExecution = pgTable("workflow_execution", {
 	status: text("status").notNull(),
 	createdAt: timestamp("createdAt", { withTimezone: true }).defaultNow(),
 	completedAt: timestamp("updatedAt", { withTimezone: true }),
+	creditsConsumed: integer("creditsConsumed").default(0),
 });
 
 export const workflowRelations = relations(workflow, ({ many }) => ({

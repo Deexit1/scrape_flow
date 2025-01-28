@@ -1,10 +1,13 @@
-import { cn } from "@/lib/utils";
-import { TaskParam } from "@/types/task";
 import { Handle, Position, useEdges } from "@xyflow/react";
-import NodeParamField from "./NodeParamField";
-import { ColorForHandle } from "./common";
+
 import useFlowValidation from "@/components/hooks/useFlowValidation";
 import { InputOTPSlot } from "@/components/ui/input-otp";
+import { cn } from "@/lib/utils";
+import { TaskParam } from "@/types/task";
+
+import { ColorForHandle } from "./common";
+import NodeParamField from "./NodeParamField";
+
 
 export function NodeInputs({ children }: { children: React.ReactNode }) {
 	return <div className="flex flex-col divide-y gap-1">{children}</div>;

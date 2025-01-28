@@ -1,14 +1,15 @@
 "use client";
 
+import { useReactFlow } from "@xyflow/react";
+import { CoinsIcon, CopyIcon, GripVerticalIcon, TrashIcon } from "lucide-react";
+import React from "react";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CreateFlowNode } from "@/lib/workflow/createFlowNode";
 import { TaskRegistry } from "@/lib/workflow/task/registry";
 import { AppNode } from "@/types/appNode";
 import { TaskType } from "@/types/task";
-import { useReactFlow } from "@xyflow/react";
-import { CoinsIcon, CopyIcon, GripVerticalIcon, TrashIcon } from "lucide-react";
-import React from "react";
 
 function NodeHeader({
 	taskType,

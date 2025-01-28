@@ -1,13 +1,5 @@
 "use client";
 
-import { GetWorkflowExecutionWithPhases } from "@/actions/workflows/getWorkflowExecutionWithPhases";
-import { GetWorkflowPhaseDetails } from "@/actions/workflows/getWorkflowPhaseDetails";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { DatesToDurationString } from "@/lib/helper/dates";
-import { GetPhasesTotalCost } from "@/lib/helper/phases";
-import { WorkflowExecutionStatus } from "@/types/workflow";
 import { useQuery } from "@tanstack/react-query";
 import { formatDistanceToNow } from "date-fns";
 import {
@@ -20,6 +12,15 @@ import {
 	WorkflowIcon,
 } from "lucide-react";
 import { ReactNode, useState } from "react";
+
+import { GetWorkflowExecutionWithPhases } from "@/actions/workflows/getWorkflowExecutionWithPhases";
+import { GetWorkflowPhaseDetails } from "@/actions/workflows/getWorkflowPhaseDetails";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { DatesToDurationString } from "@/lib/helper/dates";
+import { GetPhasesTotalCost } from "@/lib/helper/phases";
+import { WorkflowExecutionStatus } from "@/types/workflow";
 
 type ExecutionData = Awaited<ReturnType<typeof GetWorkflowExecutionWithPhases>>;
 

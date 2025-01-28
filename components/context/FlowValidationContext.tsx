@@ -1,4 +1,3 @@
-import { AppNodeMMissingInputs } from "@/types/appNode";
 import {
 	createContext,
 	Dispatch,
@@ -6,6 +5,8 @@ import {
 	SetStateAction,
 	useState,
 } from "react";
+
+import { AppNodeMMissingInputs } from "@/types/appNode";
 
 type FlowValidationContextType = {
 	invalidInputs: AppNodeMMissingInputs[];

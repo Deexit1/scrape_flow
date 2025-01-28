@@ -1,9 +1,11 @@
-import { GetWorkflowExecutionWithPhases } from "@/actions/workflows/getWorkflowExecutionWithPhases";
-import Topbar from "@/app/workflow/_components/topbar/Topbar";
-import { waitFor } from "@/lib/helper/waitFor";
 import { auth } from "@clerk/nextjs/server";
 import { Loader2Icon } from "lucide-react";
 import { Suspense } from "react";
+
+import { GetWorkflowExecutionWithPhases } from "@/actions/workflows/getWorkflowExecutionWithPhases";
+import Topbar from "@/app/workflow/_components/topbar/Topbar";
+import { waitFor } from "@/lib/helper/waitFor";
+
 import ExecutionViewer from "./components/ExecutionViewer";
 
 export default function ExecutionViewerPage({
@@ -48,4 +50,3 @@ async function ExecutionViewerWrapper({
 	}
 	return <ExecutionViewer initialData={workflowExecution} />;
 }
-// 5:38:32

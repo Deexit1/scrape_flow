@@ -1,8 +1,9 @@
 "use client";
 
+import { useReactFlow } from "@xyflow/react";
+
 import useFlowValidation from "@/components/hooks/useFlowValidation";
 import { cn } from "@/lib/utils";
-import { useReactFlow } from "@xyflow/react";
 
 export default function NodeCard({
 	children,

@@ -1,6 +1,5 @@
 "use client";
 
-import { Workflow } from "@/db/schema";
 import {
 	addEdge,
 	Background,
@@ -14,14 +13,20 @@ import {
 	useNodesState,
 	useReactFlow,
 } from "@xyflow/react";
+
+import { Workflow } from "@/db/schema";
+
+
 import "@xyflow/react/dist/style.css";
-import NodeComponent from "./nodes/NodeComponent";
 import { useCallback, useEffect } from "react";
+
 import { CreateFlowNode } from "@/lib/workflow/createFlowNode";
-import { TaskType } from "@/types/task";
-import { AppNode } from "@/types/appNode";
-import DeletableEdge from "./edges/DeletableEdge";
 import { TaskRegistry } from "@/lib/workflow/task/registry";
+import { AppNode } from "@/types/appNode";
+import { TaskType } from "@/types/task";
+
+import DeletableEdge from "./edges/DeletableEdge";
+import NodeComponent from "./nodes/NodeComponent";
 
 const nodeTypes = {
 	FlowScrapeNode: NodeComponent,

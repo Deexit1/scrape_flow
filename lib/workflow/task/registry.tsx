@@ -1,8 +1,9 @@
 import { TaskType } from "@/types/task";
+import { WorkflowTask } from "@/types/workflow";
+
 import { ExtractTextFromElementTask } from "./ExtractTextFromElement";
 import { LaunchBrowserTask } from "./LaunchBrowser";
 import { PageToHtmlTask } from "./PageToHtml";
-import { WorkflowTask } from "@/types/workflow";
 
 type Registry = {
 	[K in TaskType]: WorkflowTask & { type: K };

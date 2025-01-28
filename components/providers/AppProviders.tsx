@@ -1,11 +1,12 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
-import { SidebarProvider } from "../ui/sidebar";
-import dynamic from "next/dynamic";
-import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import dynamic from "next/dynamic";
+import { ThemeProvider } from "next-themes";
+import { useState } from "react";
+
+import { SidebarProvider } from "../ui/sidebar";
 
 const NextThemesProvider = dynamic(
 	() => import("next-themes").then((e) => e.ThemeProvider),

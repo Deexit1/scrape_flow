@@ -1,11 +1,13 @@
 "use client";
 
-import { TaskParam, TaskParamType } from "@/types/task";
-import React, { use, useCallback } from "react";
-import StringParam from "./param/StringParam";
 import { useReactFlow } from "@xyflow/react";
+import React, { use, useCallback } from "react";
+
 import { AppNode } from "@/types/appNode";
+import { TaskParam, TaskParamType } from "@/types/task";
+
 import BrowserInstanceParam from "./param/BrowserInstanceParam";
+import StringParam from "./param/StringParam";
 
 function NodeParamField({
 	param,

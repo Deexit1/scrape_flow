@@ -1,7 +1,9 @@
 "use client";
 import * as Clerk from "@clerk/elements/common";
 import * as SignUp from "@clerk/elements/sign-up";
+import { Github, LoaderCircle } from "lucide-react";
 import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import {
 	Card,
@@ -14,7 +16,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
-import { Github, LoaderCircle } from "lucide-react";
 
 export default function SignUpPage() {
 	return (

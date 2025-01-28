@@ -1,12 +1,15 @@
 import { NodeProps } from "@xyflow/react";
 import { memo } from "react";
+
+import { Badge } from "@/components/ui/badge";
+import { TaskRegistry } from "@/lib/workflow/task/registry";
+import { AppNodeData } from "@/types/appNode";
+
 import NodeCard from "./NodeCard";
 import NodeHeader from "./NodeHeader";
-import { AppNodeData } from "@/types/appNode";
-import { TaskRegistry } from "@/lib/workflow/task/registry";
 import { NodeInput, NodeInputs } from "./NodeInputs";
 import { NodeOutput, NodeOutputs } from "./NodeOutputs";
-import { Badge } from "@/components/ui/badge";
+
 
 const DEV_MODE = process.env.NEXT_PUBLIC_DEV_MODE === "true";
 const NodeComponent = memo((props: NodeProps) => {
